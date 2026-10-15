@@ -1,0 +1,16 @@
+[server]
+host=127.0.0.1
+port=43123
+max_clients=64
+
+[database]
+host=127.0.0.1
+port=3306
+name=seed_engine
+user=seed_app
+password=CHANGE_ME
+connect_timeout_seconds=5
+
+[security]
+session_ttl_minutes=60
+pbkdf2_iterations=310000
