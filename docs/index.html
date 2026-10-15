@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SEED — ArkansasIo C++ project documentation and project portal.">
+  <title>SEED | ArkansasIo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <a class="brand" href="./">SEED</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#quickstart">Quick Start</a>
+        <a href="#structure">Project</a>
+        <a href="https://github.com/ArkansasIo/seed">GitHub</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">ARKANSASIO · C++ PROJECT</p>
+      <h1>SEED</h1>
+      <p class="lead">A clean project portal for the SEED C++ codebase, documentation, builds, tests, and future modules.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/ArkansasIo/seed">View Repository</a>
+        <a class="button" href="#quickstart">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <p class="eyebrow">OVERVIEW</p>
+      <h2>Project documentation</h2>
+      <p>This GitHub Pages site is the public-facing documentation and project hub for SEED. Source code remains in the repository while this site provides a lightweight browser interface for project information.</p>
+      <div class="cards">
+        <article class="card"><h3>C++</h3><p>Native C++ project organized around CMake for reproducible builds.</p></article>
+        <article class="card"><h3>CMake</h3><p>Build configuration lives in the repository root and can be extended as the project grows.</p></article>
+        <article class="card"><h3>Tests</h3><p>Test sources live under <code>tests/</code> and are part of the project structure.</p></article>
+      </div>
+    </section>
+
+    <section id="quickstart" class="section alt">
+      <p class="eyebrow">QUICK START</p>
+      <h2>Build from source</h2>
+      <pre><code>git clone https://github.com/ArkansasIo/seed.git
+cd seed
+cmake -S . -B build
+cmake --build build</code></pre>
+      <p>See the repository README and CMake configuration for the current build targets and platform requirements.</p>
+    </section>
+
+    <section id="structure" class="section">
+      <p class="eyebrow">REPOSITORY</p>
+      <h2>Project structure</h2>
+      <div class="tree"><code>seed/
+├── include/      public C++ headers
+├── src/          implementation
+├── tests/        test suite
+├── config/       configuration
+├── database/     database assets
+├── docs/         this documentation site
+├── CMakeLists.txt
+└── README.md</code></div>
+    </section>
+
+    <section class="section cta">
+      <h2>Follow development</h2>
+      <p>Issues, source changes, documentation, and future releases are maintained in the GitHub repository.</p>
+      <a class="button primary" href="https://github.com/ArkansasIo/seed">Open ArkansasIo/seed</a>
+    </section>
+  </main>
+
+  <footer><span>SEED · ArkansasIo</span><span>Built with GitHub Pages</span></footer>
+</body>
+</html>
